@@ -49,6 +49,14 @@ The USB-A-shaped connector is **not a standard USB data interface**. It carries 
 
 `P7` is not exposed at the connector. The stock firmware asserts it around UART transmission, indicating that it enables the adapter board's internal line driver.
 
+## Hardware photos
+
+| Adapter front | Adapter back |
+|---|---|
+| ![CB3S garage-opener adapter, front](docs/images/module-front.png) | ![CB3S garage-opener adapter, back](docs/images/module-back.png) |
+
+![Tuya application instruction sheet supplied with the opener](docs/images/tuya-manual-page.png)
+
 ## Installation
 
 1. Back up the original flash before replacing the firmware.
