@@ -1,0 +1,29 @@
+substitutions:
+  device_name: "cb3s-garage-wifi-test"
+  friendly_name: "CB3S Garage WiFi Test"
+
+esphome:
+  name: "${device_name}"
+  friendly_name: "${friendly_name}"
+  comment: "Wi-Fi-only diagnostic build: no UART, Modbus, or GPIO assignments"
+
+bk72xx:
+  board: cb3s
+
+logger:
+  baud_rate: 0
+  level: INFO
+
+api:
+
+ota:
+  - platform: esphome
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  reboot_timeout: 0s
+  ap:
+    ssid: "CB3S Garage Rescue"
+
+captive_portal:

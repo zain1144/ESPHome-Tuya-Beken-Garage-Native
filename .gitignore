@@ -1,0 +1,28 @@
+# ESPHome output and local credentials
+.esphome/
+build/
+secrets.yaml
+*.bin
+*.uf2
+*.ota.bin
+
+# Reverse-engineering output and sensitive vendor data
+dumps/
+extracted/
+storage/
+*.rbl
+*.map
+*.elf
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
